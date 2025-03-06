@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - School Time 2025</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff6ec7, #ff7a5c, #feb47b);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Keyframes for background animation */
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff6ec7, #ff7a5c, #feb47b);
+            }
+            50% {
+                background: linear-gradient(135deg, #6a11cb, #2575fc);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff6ec7, #ff7a5c, #feb47b);
+            }
+        }
+
+        /* Login form container */
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        .login-container h2 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #ff7a5c;
+            background: #fff;
+            font-size: 18px;
+            color: #333;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .login-container input[type="text"]:focus, 
+        .login-container input[type="password"]:focus {
+            border-color: #feb47b;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff7a5c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #feb47b;
+        }
+
+        /* Error message styles */
+        .error-message {
+            color: #ff6ec7;
+            margin-top: 10px;
+            font-size: 16px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="error-message" id="error-message">Invalid username or password!</div>
+    </div>
+
+    <script>
+        // Define the correct username and password
+        const correctUsername = "Admin";  // Set your username here
+        const correctPassword = "1game1";  // Set your password here
+
+        // Handle login form submission
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent form submission
+
+            // Get input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check if username and password match
+            if (username === correctUsername && password === correctPassword) {
+                // Redirect to another page on successful login (e.g., dashboard)
+                window.location.href = "dashboard.html"; // Change this URL as needed
+            } else {
+                // Show error message if login fails
+                document.getElementById("error-message").style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+</html>
