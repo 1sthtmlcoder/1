@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Time 2025</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #005477, #2e294e, #3A615E);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+            animation: backgroundAnimation 10s ease-in-out infinite;
+        }
 
+        /* Keyframes for background animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff6ec7, #ff7a5c, #feb47b);
+            }
+            50% {
+                background: linear-gradient(135deg, #6a11cb, #2575fc);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff6ec7, #ff7a5c, #feb47b);
+            }
+        }
+
+        /* Main title styles */
+        h1 {
+            font-size: 150px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5);
+            letter-spacing: 5px;
+            animation: bounce 2s infinite alternate;
+        }
+
+        /* Keyframes for title bouncing effect */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50px);
+            }
+        }
+
+        /* Hover effect for title */
+        h1:hover {
+            color: #fffae6;
+            text-shadow: 0 0 30px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.8);
+        }
+
+        /* Background circle effect */
+        .circle {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+            animation: rotateCircle 15s linear infinite;
+        }
+
+        @keyframes rotateCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Blinking text */
+        .blink {
+            font-size: 50px;
+            animation: blinkAnimation 1.5s infinite;
+        }
+
+        @keyframes blinkAnimation {
+            0%, 50% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+
+        /* Hover effect on background circle */
+        .circle:hover {
+            box-shadow: 0 0 200px rgba(255, 255, 255, 0.8);
+            transform: scale(1.2);
+        }
+
+        /* Animated border for dynamic effect */
+        .animated-border {
+            border: 5px solid #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 20px;
+            animation: borderAnimation 5s infinite;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-color: #ff6ec7;
+            }
+            25% {
+                border-color: #feb47b;
+            }
+            50% {
+                border-color: #ff7a5c;
+            }
+            75% {
+                border-color: #ff6ec7;
+            }
+            100% {
+                border-color: #feb47b;
+            }
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        /* Links below the footer */
+        .footer-links {
+            position: absolute;
+            bottom: 60px;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #fffae6;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Main Title -->
+    <h1>School Time 2025</h1>
+
+    <!-- Background Circle -->
+    <div class="square"></div>
+
+    <!-- Blinking Text Example -->
+    <div class="animated-border">Get ready for School Time 2025!</div> 
+
+    <!-- Animated Border Box -->
+    <div class="animated-border">Made in raw code</div>
+    
+<a class="animated-border href="page2.html">Next</a>
+    
+    <!-- Footer -->
+    <footer>thanks for reading!2
+        Made for the help of students</footer>
+
+    <!-- Links below the footer -->
+    <div class="footer-links">
+        <a href="terms.html">Terms(broken)</a>
+        <a href="login.html">Login</a>
+    </div>
+</body>
+</html>
