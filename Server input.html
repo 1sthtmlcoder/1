@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - School Time 2025</title>
+    <title>dashboard page 2</title>
     <style>
         /* Global styles */
         body {
@@ -96,30 +96,28 @@
 <body>
 
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>enter</h2>
         <form id="login-form">
-            <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <button type="submit">enter</button>
         </form>
-        <div class="error-message" id="error-message">Invalid username or password!</div>
+        <div class="error-message" id="error-message">Invalid code </div>
     </div>
 
     <script>
         // Define the correct username and password
-        const correctUsername = "Admin";  // Set your username here
-        const correctPassword = "1game1";  // Set your password here
+          // Set your username here
+        const correctPassword = "password12341";  // Set your password here
 
         // Handle login form submission
         document.getElementById("login-form").addEventListener("submit", function(event) {
             event.preventDefault();  // Prevent form submission
 
             // Get input values
-            const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
 
             // Check if username and password match
-            if (username === correctUsername && password === correctPassword) {
+            if (password === correctPassword) {
                 // Redirect to another page on successful login (e.g., dashboard)
                 window.location.href = "https://1sthtmlcoder.github.io/1/n.html"; // Change this URL as needed
             } else {
