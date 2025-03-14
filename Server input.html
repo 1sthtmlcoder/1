@@ -119,7 +119,24 @@
             // Check if username and password match
             if (password === correctPassword) {
                 // Redirect to another page on successful login (e.g., dashboard)
-                window.location.href = "https://1sthtmlcoder.github.io/1/passwordcorrect.html"; // Change this URL as needed
+                window.location.href = "https://1sthtmlcoder.github.io/1/passwordcorrectdev.html"; // Change this URL as needed
+            } else {
+                // Show error message if login fails
+                document.getElementById("error-message").style.display = "block";
+            }   
+            
+            // Check if username and password match
+            if (password === "1") {
+                // Redirect to another page on successful login (e.g., dashboard)
+                window.location.href = "https://1sthtmlcoder.github.io/1/passwordcorrect1.html"; // Change this URL as needed
+            } else {
+                // Show error message if login fails
+                document.getElementById("error-message").style.display = "block";
+            }
+                        // Check if username and password match
+            if (password === "2") {
+                // Redirect to another page on successful login (e.g., dashboard)
+                window.location.href = "https://1sthtmlcoder.github.io/1/passwordcorrect2.html"; // Change this URL as needed
             } else {
                 // Show error message if login fails
                 document.getElementById("error-message").style.display = "block";
